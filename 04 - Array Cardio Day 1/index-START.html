@@ -62,12 +62,12 @@
       return l1 > l2 ? 1 : -1
     }
     people.sort(compare)
-    
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
     function counter(dict, item){
-      if(dict[item]==undefined){
+      if(!dict[item]){
         dict[item] = 0
         }	
       dict[item] += 1;
