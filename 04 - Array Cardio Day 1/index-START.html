@@ -58,16 +58,11 @@
       l1 = p1.split(',')[1]
       l2 = p2.split(',')[1]
       var comparison = 0
-        if (l1>l2){
-        comparison = 1
-        }
-      else{
-      comparison = -1
-      }	
-      return comparison
+      
+      return l1 > l2 ? 1 : -1
     }
-
     people.sort(compare)
+    
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
